@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 import EnvironmentApi from '@/api/EnvironmentApi';
 import AuthService from '@/core/auth/AuthService';
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const API_URL = 'http://172.20.51.63:8080/v1';
 
 const axiosClient: AxiosInstance = axios.create({
 	baseURL: API_URL,
